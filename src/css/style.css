@@ -23,8 +23,6 @@
 body {
     font-size: 1.2rem;
     font-family: "Lexend";
-    background: #FFEFFE;
-
 }
 
 h1 {
@@ -67,6 +65,7 @@ span {
     padding-right: 3rem;
     padding-left: 3rem;
     width: 100%;
+    background-color: #5621351f;
     backdrop-filter: blur(1rem);
 }
 
@@ -79,7 +78,7 @@ span {
     font-weight: 500; 
 }
 
-.destaque {
+#destaqueHome {
     position: relative;
     padding-left: 4rem;
     bottom: 23rem;
@@ -134,7 +133,7 @@ a:hover {
     background-color: var(--color-light);
     margin: .5rem auto;
     border-radius: var(--radius);
-    transition: var(--transition); /* Animação para que quando o menu for clicado, tenha a animação na barra */
+    transition: var(--transition);
 }
 
 /* Boas Vindas */
@@ -224,3 +223,43 @@ a:hover {
 
 
 /* Final da Hero */
+
+/* Começo Cardápio */
+
+/* ::before é necessário para dar o efeito de blur no componente */
+.outroHr::before {
+    content: "";
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+#heroCard::before {
+    background-image: var(--gradient), url(../assets/img/Banners/banner_cardapio.jpg);
+}
+
+.outroHr {
+    position: relative;
+    min-height: 50dvh;
+    z-index: 2;
+}
+
+.destaque {
+    font-family: "Libre Baskerville";
+    color: var(--color--background);
+    margin: auto;
+    text-align: center;
+}
+
+.outroHr h1 {
+    font-size: clamp(1rem, 3vmax, 4rem) 
+}
+
+.outroHr p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}

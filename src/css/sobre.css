@@ -5,10 +5,11 @@ body{
 
 /*imagem*/
 .img-fundo{
+    
     position: relative;
     width: 1974px;
-    height: 613px;
-    overflow: hidden; /*para imagem no vazar se for maior*/
+    height: 310px;
+    overflow: hidden;
 }
 
 /*arrumar a posição da imagem*/
@@ -22,7 +23,61 @@ body{
     z-index: -1; /*para imagem ficar atras do conteudo( titulo da pagina)*/
 }
 
+
+/*parte da sakura para arrumar
+
+.sakura{
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: auto;
+}
+.sakuraD{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: -1;
+}
+
+.sakuraE{
+    top: 10px;
+    left: 10px;
+}*/
+
+
+
 /*parte do texto que fica em cima da imagem*/
-.conteudo{
+
+.titulo-inicial h1{
+    color:#fff;
     position: relative;
+    width: 838px;
+    height: 160px;
+    left: 50rem;
+}
+.titulo-inicial p{
+    color:#fff;
+    position: relative;
+    width: 838px;
+    height: 160px;
+    left: 50rem;
+}
+
+/*texto e titulo do conheça o restaurante*/
+.text-sobre h2{
+    margin:180px;
+    font-size: 36px;
+    margin-top: 60px;
+    margin-bottom: 2%;
+}
+
+.text-sobre p{
+    line-height: 2.0;
+    margin:180px;
+    margin-top: 1%;
+    max-width: 600px;
+    text-align: justify;
+    margin-bottom: 0px; 
+     
+
 }

@@ -1,0 +1,106 @@
+ <div class="img-fundo">
+        <img src="../assets/img/Banners/banner_sobre.jpg" alt="" class="fundo">
+        <!--<img src="../assets/img/Sakuras/sakura2.png" alt="" class="sakuraD">
+        <img src="../assets/img/Sakuras/sakura4.png" alt="" class="sakuraE">-->
+        <div class="titulo-inicial">
+            <h1>Sobre a Yume</h1>
+            <p>Conheça nossa trajetória</p>
+        </div>
+    </div>
+
+    <div class="text-sobre">
+        <h2>Conheça o Restaurante Yume</h2>
+        <p>Nascemos da união entre a paixão pela culinária japonesa e o desejo de criar um espaço onde tradição e acolhimento se encontram. Inspirado nos templos orientais e cercado por cerejeiras, nosso restaurante celebra a cultura japonesa em cada detalhe — do ambiente ao prato servido. Mais que um restaurante, somos um refúgio de sabores e experiências. Servimos pratos autênticos preparados com técnicas tradicionais e ingredientes frescos, em um cenário que convida à contemplação e ao bem-estar. Cada visita é uma imersão na beleza, nos rituais e no sabor do Japão.</p>
+    </div>
+
+
+
+
+
+    parte css 
+
+    /*cor do fundo*/
+body{
+    background: #FFEFFE;
+}
+
+/*imagem*/
+.img-fundo{
+    
+    position: relative;
+    width: 1974px;
+    height: 310px;
+    overflow: hidden;
+}
+
+/*arrumar a posição da imagem*/
+#fundo{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /*para imagem ficar atras do conteudo( titulo da pagina)*/
+}
+
+
+/*parte da sakura para arrumar
+
+.sakura{
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: auto;
+}
+.sakuraD{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: -1;
+}
+
+.sakuraE{
+    top: 10px;
+    left: 10px;
+}*/
+
+
+
+/*parte do texto que fica em cima da imagem*/
+
+.titulo-inicial h1{
+    color:black;
+    position: relative;
+    width: 838px;
+    height: 160px;
+    left: 50rem;
+}
+.titulo-inicial p{
+    color:black;
+    position: relative;
+    width: 838px;
+    height: 160px;
+    left: 50rem;
+    margin-top: 0;
+}
+
+/*texto e titulo do conheça o restaurante*/
+.text-sobre h2{
+    margin:180px;
+    font-size: 36px;
+    margin-top: 60px;
+    margin-bottom: 2%;
+}
+
+.text-sobre p{
+    line-height: 2.0;
+    margin:180px;
+    margin-top: 1%;
+    max-width: 600px;
+    text-align: justify;
+    margin-bottom: 0px; 
+     
+
+}

@@ -1,0 +1,28 @@
+/*cor do fundo*/
+body{
+    background: #FFEFFE;
+}
+
+/*imagem*/
+.img-fundo{
+    position: relative;
+    width: 1974px;
+    height: 613px;
+    overflow: hidden; /*para imagem no vazar se for maior*/
+}
+
+/*arrumar a posição da imagem*/
+.fundo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /*para imagem ficar atras do conteudo( titulo da pagina)*/
+}
+
+/*parte do texto que fica em cima da imagem*/
+.conteudo{
+    position: relative;
+}

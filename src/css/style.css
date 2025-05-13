@@ -162,8 +162,8 @@ a:hover {
 .img1 {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 420px; /* ajuste conforme necessário */
+  margin-left: -200px;
+  width: 500px; /* ajuste conforme necessário */
   border: 3px solid #fff;
   box-shadow: 0 4px 8px rgba(153, 64, 149, 0.2);
   z-index: 2;
@@ -172,9 +172,9 @@ a:hover {
 
 .img2 {
   position: absolute;
-  top: 120px; /* ajuste para a sobreposição desejada */
-  left: 140px; /* ajuste para a sobreposição desejada */
-  width: 400px; /* ajuste conforme necessário */
+  top: 170px; /* ajuste para a sobreposição desejada */
+  left: 40px; /* ajuste para a sobreposição desejada */
+  width: 460px; /* ajuste conforme necessário */
   border: 3px solid #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   z-index: 1;
@@ -194,23 +194,19 @@ a:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   overflow: hidden;
   position: relative;
-  margin-top: -800px
+  margin-top: -600px
 }
 
 .icon-door img {
   width: 108px;
   height: 80px;
   object-fit: contain;
-  margin-top: -1px; /* Ajuste para subir ainda mais a imagem */
 }
 
 
-
-
 .texto {
-  flex: 1;
-  text-align: left;
-  margin-top: 90px;   /* ajuste esse valor conforme desejar */
+  flex: 2;
+  margin-top: 90px;
 }
 
 .bem-vindo {
@@ -219,25 +215,12 @@ a:hover {
   color: #2e2e2e;
 }
 
-.bem-vindo span {
-  color: #d36ba1;
-  font-weight: bold;
-}
-
 .text-inicial {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.7;
   color: #333;
+  padding-right: 40px; /* ajuste esse valor conforme desejar */
 }
-
-.text-inicial span {
-  background-color: #e4e0e0;
-  text-decoration: underline;
-  padding: 0 3px;
-  border-radius: 4px;
-}
-
-
 
 
 /* Final da Hero */

@@ -23,6 +23,8 @@
 body {
     font-size: 1.2rem;
     font-family: "Lexend";
+    background: #FFEFFE;
+
 }
 
 h1 {
@@ -134,5 +136,108 @@ a:hover {
     border-radius: var(--radius);
     transition: var(--transition); /* Animação para que quando o menu for clicado, tenha a animação na barra */
 }
+
+/* Boas Vindas */
+
+.boas-vindas {
+  padding: 200px 40px;
+}
+
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.imagens {
+  position: relative;
+  width: 400px; /* ajuste conforme necessário */
+  height: 250px; /* ajuste conforme necessário */
+}
+
+.img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px; /* ajuste conforme necessário */
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(153, 64, 149, 0.2);
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.img2 {
+  position: absolute;
+  top: 120px; /* ajuste para a sobreposição desejada */
+  left: 140px; /* ajuste para a sobreposição desejada */
+  width: 400px; /* ajuste conforme necessário */
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+/* Icone */
+
+.icon-door {
+  width: 80px;
+  height: 80px;
+  background: #fbeefa;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;  /* Joga o conteúdo para o topo do círculo */
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  position: relative;
+  margin-top: -800px
+}
+
+.icon-door img {
+  width: 108px;
+  height: 80px;
+  object-fit: contain;
+  margin-top: -1px; /* Ajuste para subir ainda mais a imagem */
+}
+
+
+
+
+.texto {
+  flex: 1;
+  text-align: left;
+  margin-top: 90px;   /* ajuste esse valor conforme desejar */
+}
+
+.bem-vindo {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2e2e2e;
+}
+
+.bem-vindo span {
+  color: #d36ba1;
+  font-weight: bold;
+}
+
+.text-inicial {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.text-inicial span {
+  background-color: #e4e0e0;
+  text-decoration: underline;
+  padding: 0 3px;
+  border-radius: 4px;
+}
+
+
+
 
 /* Final da Hero */

@@ -145,7 +145,7 @@ a:hover {
 }
 
 /* ::before é necessário para dar o efeito de blur no componente */
-.outroHr::before {
+.outroHead::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -156,7 +156,7 @@ a:hover {
     z-index: -1;
 }
 
-.outroHr {
+.outroHead{
     position: relative;
     min-height: 50dvh;
     z-index: 2;

@@ -406,3 +406,28 @@ z-index: -1;
     color: var(--color--background);
     transition: var(--transition);
 }
+.pratos #bloco1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 150px;
+    gap: 2rem;
+    background-color: yellowgreen;
+    
+}
+#asside1_2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+#asside1_1 img{
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+}
+.complemento{
+    display: flex;
+}

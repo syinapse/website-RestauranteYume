@@ -44,7 +44,7 @@ a {
 }
 
 /*definindo a cor do span do texto */
-span {
+.yume {
     color: var(--color--primary);
     font-family: "Libre Baskerville";
 
@@ -165,20 +165,39 @@ a:hover {
 /*envolve a section inteira*/
 .subtitulo1_0{
     position: absolute;
+    font-size: 1.3rem;
+  line-height: 1.7;
+  color: var(--color--text);
+  margin: 150px;
+  text-align: justify;
+   max-width: 600px;
+   margin-top: 45%;
+  
 
 }
 
-
-
-.span{
+.span2{
     position: relative;
     color: var(--color--secondary);
+
+    font-size: 45px;
+   margin: 5px; 
+   white-space: nowrap;
+    
+}
+
+.span3{
+    color: var(--color--primary);
+    font-size: 45px;
+     white-space: nowrap;
 }
 
 
 
 
-/*paragrafo okay*/
+
+
+/*paragrafo okay
 
 .text-inicial {
   font-size: 1.3rem;
@@ -189,7 +208,7 @@ a:hover {
    max-width: 600px;
    margin-top: 45%;
   
-}
+}*/
 
 
    

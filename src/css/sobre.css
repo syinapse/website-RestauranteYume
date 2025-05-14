@@ -66,6 +66,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
+    margin-bottom: auto;
 }
 
 
@@ -139,6 +140,7 @@ a:hover {
     left: 65%;
     right: auto;
     top: 250px;
+    margin-bottom: auto;
    
 }
 
@@ -162,7 +164,65 @@ a:hover {
   border-radius: 8px;
 }
 
-/*envolve a section inteira*/
+.titulo2 {
+   padding: 1px 180px;
+    position: relative;
+    color: var(--color--accent);
+    font-size: 1.3rem;
+   
+}
+
+
+
+.p2{
+    position:absolute;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: var(--color--text);
+  margin: 1px;
+  text-align: justify;
+   max-width: 600px;
+   margin-top: 30%;
+   margin-right: 50%;
+   
+
+   
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*envolve a section inteira
 .subtitulo1_0{
     position: absolute;
     font-size: 1.3rem;
@@ -190,7 +250,7 @@ a:hover {
     color: var(--color--primary);
     font-size: 45px;
      white-space: nowrap;
-}
+}*/
 
 
 

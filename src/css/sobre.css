@@ -161,3 +161,37 @@ a:hover {
   z-index: 1;
   border-radius: 8px;
 }
+
+/*envolve a section inteira*/
+.subtitulo1_0{
+    position: absolute;
+
+}
+
+
+
+.span{
+    position: relative;
+    color: var(--color--secondary);
+}
+
+
+
+
+/*paragrafo okay*/
+
+.text-inicial {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: var(--color--text);
+  margin: 180px;
+  text-align: justify;
+   max-width: 600px;
+   margin-top: 45%;
+  
+}
+
+
+   
+
+

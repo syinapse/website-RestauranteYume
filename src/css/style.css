@@ -45,6 +45,12 @@ span {
     color: var(--color--primary);
 }
 
+/* Personaliza a cor e o fundo quando o texto é selecionado */
+::selection {
+    color: white;
+    background: var(--color--accent);
+}
+
 /* Começo da Hero */
 
 .header {

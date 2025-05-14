@@ -127,3 +127,37 @@ a:hover {
 }
 
 /* Final da Hero */
+
+
+
+/*parte das 2 imagens*/
+
+.imagens{
+    position: relative;
+    width: 400px; /* ajuste conforme necessário */
+    height: 0px; /* ajuste conforme necessário */
+    left: 65%;
+    right: auto;
+    top: 250px;
+   
+}
+
+.img1{
+    position: absolute;
+  top: 0;
+  margin-left: -200px;
+  width: 500px; /* ajuste conforme necessário */
+  border: 3px solid var(--color--primary);
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.img2{
+    position: absolute;
+  top: 170px; /* ajuste para a sobreposição desejada */
+  left: 40px; /* ajuste para a sobreposição desejada */
+  width: 460px; /* ajuste conforme necessário */
+  border: 3px solid var(--color--primary);
+  z-index: 1;
+  border-radius: 8px;
+}

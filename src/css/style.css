@@ -351,8 +351,9 @@ a:hover {
 }
 
 .galho-decorativo img {
-  width: 500px; /* ou outro tamanho que desejar */
+  width: 400px; /* ou outro tamanho que desejar */
   max-width: 100%;
+  margin-top: -50px;
 }
 
 
@@ -653,9 +654,9 @@ a:hover {
   position: relative;
 }
 
-/* section {
-  margin-bottom: 48px;
-} */
+section {
+  margin-bottom: 10px;
+}
 
 /* Ícone superior central */
 .icon-location {
@@ -681,7 +682,7 @@ a:hover {
 }
 
 .img-card img {
-  width: 360px;
+  width: 400px;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -715,18 +716,20 @@ a:hover {
 /* Botão */
 .btn-direcione {
   padding: 12px 24px;
-  background-color: #EB96C1;
+  background-color: #ff33ee;
   color: white;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   margin-left: -480px;
   margin-top: -110px;
-  transition: background 0.3s ease;
+
 }
 
 .btn-direcione:hover {
-  background-color: #c06bbb;
+  background-color: #f73b99;
+  
+  color: white;
 }
 
 .btn-direcione .arrow {

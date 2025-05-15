@@ -152,7 +152,6 @@
 body {
     font-size: 1.2rem;
     font-family: "Lexend";
-    background-color: var(--color--background);
 }
 
 h1 {
@@ -310,40 +309,54 @@ a:hover {
 }
 
 .imagens {
-    position: relative;
-    width: 400px;
-    /* ajuste conforme necessário */
-    height: 250px;
-    /* ajuste conforme necessário */
+  position: relative;
+  width: 400px; /* ajuste conforme necessário */
+  height: 250px; /* ajuste conforme necessário */
 }
 
 .img1 {
-    position: absolute;
-    top: 0;
-    margin-left: -200px;
-    width: 500px;
-    /* ajuste conforme necessário */
-    border: 3px solid #fff;
-    box-shadow: 0 4px 8px rgba(153, 64, 149, 0.2);
-    z-index: 2;
-    border-radius: 8px;
+  position: absolute;
+  top: 0;
+  margin-left: -200px;
+  width: 500px; /* ajuste conforme necessário */
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(153, 64, 149, 0.2);
+  z-index: 2;
+  border-radius: 8px;
 }
 
 .img2 {
-    position: absolute;
-    top: 170px;
-    /* ajuste para a sobreposição desejada */
-    left: 40px;
-    /* ajuste para a sobreposição desejada */
-    width: 460px;
-    /* ajuste conforme necessário */
-    border: 3px solid #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 8px;
+  position: absolute;
+  top: 170px; /* ajuste para a sobreposição desejada */
+  left: 40px; /* ajuste para a sobreposição desejada */
+  width: 460px; /* ajuste conforme necessário */
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
 }
 
 /* Icone */
+
+.icon-door {
+  width: 80px;
+  height: 80px;
+  background: #fbeefa;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;  /* Joga o conteúdo para o topo do círculo */
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  position: relative;
+  margin-top: -600px
+}
+
+.icon-door img {
+  width: 108px;
+  height: 80px;
+  object-fit: contain;
+}
 
 
 .texto {
@@ -358,11 +371,10 @@ a:hover {
 }
 
 .text-inicial {
-    font-size: 1.3rem;
-    line-height: 1.7;
-    color: #333;
-    padding-right: 40px;
-    /* ajuste esse valor conforme desejar */
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #333;
+  padding-right: 40px; /* ajuste esse valor conforme desejar */
 }
 
 /* começo do mais vendidos */
@@ -660,6 +672,136 @@ a:hover {
     flex-direction: column;
     align-items: center;
 }
+
+
+
+
+
+/* ENCONTRE O YUME PERTO DE VOCE */
+
+
+.yume-localizacao {
+  display: flex;
+  justify-content: center;
+  padding: 200px 20px;
+  background-color: #fceefd;
+  position: relative;
+}
+
+
+/* Ícone superior central */
+.icon-location {
+  position: absolute;
+  margin-top: 120px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: white;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.yume-localizacao-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  max-width: 1100px;
+  flex-wrap: wrap;
+}
+
+.img-card img {
+  width: 360px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.info-section {
+  flex: 1;
+  margin-top: -350px;
+  position: relative;
+  min-width: 320px;
+  max-width: 430px;
+}
+
+.yume-localizacao h2 {
+  font-size: 40px;
+  color: #222;
+  margin: 0 0 14px 0;
+  line-height: 1.2;
+}
+
+.info-section h2 span {
+  color: #d38fcf;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+/* Botão */
+.btn-direcione {
+  padding: 12px 24px;
+  background-color: #EB96C1;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: -480px;
+  margin-top: -110px;
+  transition: background 0.3s ease;
+}
+
+.btn-direcione:hover {
+  background-color: #c06bbb;
+}
+
+.btn-direcione .arrow {
+  margin-left: 8px;
+}
+
+/* Unidades */
+.unidades {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 100px;
+  margin-left: -230px;
+}
+
+.unidade-title {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  
+}
+
+.em-construcao {
+  font-size: 14px;
+  color: #666;
+}
+
+.unidade-end{
+  color: black
+}
+
+/* Imagem decorativa da flor */
+.cherry-blossom {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  width: 160px;
+  pointer-events: none;
+}
+
+
+
+
 
 .sakura {
     position: absolute;

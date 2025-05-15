@@ -819,9 +819,9 @@ section {
 /* Imagem decorativa da flor */
 .cherry-blossom {
   position: absolute;
-  right: 40px;
-  bottom: 40px;
-  width: 160px;
+  right: -60px;
+  bottom: 350px;
+  width: 360px;
   pointer-events: none;
 }
 

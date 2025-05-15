@@ -130,6 +130,42 @@ a:hover {
 /* Final da Hero */
 
 
+.icon-door{
+    position:absolute;
+    left: 39%;
+    
+}
+
+.icon-door img {
+    width: 400px;
+    height: 90px;
+    object-fit: contain;
+    margin-top: 400px;
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--color--background);
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px #00000040;
+    
+}
+
+.iconeGuia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--color--accent);
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px #00000040;
+    
+
+}
+
 
 /*parte das 2 imagens*/
 
@@ -194,6 +230,21 @@ a:hover {
    margin-top: 16%;
    margin-bottom: 5%;
 }
+
+
+
+
+/* Icone */
+
+
+
+
+
+
+
+
+
+
 
 /* Icone 
 

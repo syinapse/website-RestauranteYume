@@ -19,60 +19,66 @@
     --gradient: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .45));
     --transition: .5s;
 }
+
 /* inicio Onload */
 .hidden {
-  display: none;
+    display: none;
 }
+
 .no-scroll {
-  overflow: hidden;
-  height: 100vh;
+    overflow: hidden;
+    height: 100vh;
 }
 
 @keyframes efeito {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
+
 /* final Onload */
 /* estilizacao Onload */
 #inicio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; 
-  width: 100%;
-  background-color: var(--color--background);
-  animation: efeito 1s ease-in-out;
-  gap: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color--background);
+    animation: efeito 1s ease-in-out;
+    gap: 4rem;
 }
 
 
 .bem_vindo {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
 }
-.bem_vindo p{
+
+.bem_vindo p {
     font-size: 2.5rem;
     text-align: center;
 }
+
 .bem_vindo img {
-  width: 150px;
+    width: 150px;
 }
 
-.loader{
-display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
-.loader span{
+.loader span {
     color: #562135;
     font-size: 24px;
     color: var(--color--secondary);
@@ -81,54 +87,65 @@ display: flex;
     animation: animate 2s infinite;
     font-size: 2rem;
 }
+
 /* fim estilizacao Onload */
 
 /* animate loading  */
-.loader span:nth-child(1){
+.loader span:nth-child(1) {
 
     animation-delay: .1s;
 }
-.loader span:nth-child(2){
-    
+
+.loader span:nth-child(2) {
+
     animation-delay: .2s;
 }
-.loader span:nth-child(3){
-    
+
+.loader span:nth-child(3) {
+
     animation-delay: .3s;
 }
-.loader span:nth-child(4){
-    
+
+.loader span:nth-child(4) {
+
     animation-delay: .4s;
 }
-.loader span:nth-child(5){
-    
+
+.loader span:nth-child(5) {
+
     animation-delay: .5s;
 }
-.loader span:nth-child(6){
-    
+
+.loader span:nth-child(6) {
+
     animation-delay: .6s;
 }
-.loader span:nth-child(7){
-    
+
+.loader span:nth-child(7) {
+
     animation-delay: .7s;
 }
-@keyframes animate{
-    0%{
+
+@keyframes animate {
+    0% {
         color: var(--color--secondary);
         transform: translateY(0);
         margin-left: 0;
     }
-      25%{
+
+    25% {
         color: var(--color--primary);
         transform: translateY(-15px);
         margin-left: 10px;
     }
-      100%{
+
+    100% {
         color: var(--color--secondary);
         transform: translateY(0);
-      
+
     }
 }
+
 /* final animate loading  */
 
 body {
@@ -267,7 +284,7 @@ a:hover {
     z-index: -1;
 }
 
-.outroHead{
+.outroHead {
     position: relative;
     min-height: 50dvh;
     z-index: 2;
@@ -327,27 +344,6 @@ a:hover {
 
 /* Icone */
 
-.icon-door {
-    width: 80px;
-    height: 80px;
-    background: #fbeefa;
-    border-radius: 50%;
-    display: flex;
-    align-items: flex-start;
-    /* Joga o conteúdo para o topo do círculo */
-    justify-content: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    position: relative;
-    margin-top: -600px
-}
-
-.icon-door img {
-    width: 108px;
-    height: 80px;
-    object-fit: contain;
-}
-
 
 .texto {
     flex: 2;
@@ -369,82 +365,94 @@ a:hover {
 }
 
 /* começo do mais vendidos */
-.btnArrow{
+.btnArrow {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#arrow button{
+
+#arrow button {
     padding: 10px;
 }
 
-#leftArrow{
+#leftArrow {
     display: inline-block;
-  transform: rotate(180deg)
+    transform: rotate(180deg)
 }
-.text_mais_vendidos h1{
+
+.text_mais_vendidos h1 {
     font-size: 40px;
     font-weight: 500;
 }
-.text_mais_vendidos p{
+
+.text_mais_vendidos p {
     font-size: 25px;
 
 }
+
 .text_mais_vendidos {
     margin-left: 40px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
-#sakura2{
-position: absolute;
-width: 100%;
-display: flex;
-justify-content: flex-end;
-z-index: -1;
+
+#sakura2 {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: -1;
 
 }
-#sakura2 img{
+
+#sakura2 img {
     width: 350px;
     height: 350px;
     position: absolute;
     top: -150px;
 }
+
 .mais-vendidos {
 
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-.icone_cetas{
+
+.icone_cetas {
     display: flex;
     gap: 2rem;
     flex-direction: column;
     align-items: center;
 }
-.icone_cetas img{
+
+.icone_cetas img {
     width: 110px;
     height: 110px;
 }
-#arrow{
+
+#arrow {
     display: flex;
     gap: 1.5rem;
-    
+
 }
 
-#mais_vendidos{
+#mais_vendidos {
     display: flex;
     gap: 2rem;
     flex-direction: column;
-     justify-content: space-around;
-     
+    justify-content: space-around;
+
 }
-.pratos{
+
+.pratos {
     display: flex;
     gap: 8rem;
     margin: auto;
 
 }
+
 #arrow button {
     border: 4px solid var(--color--secondary);
     border-radius: 100%;
@@ -453,17 +461,19 @@ z-index: -1;
     font-size: 1.5rem;
     background-color: transparent;
     text-align: center;
-    width: 50px;            
-    height: 50px; 
+    width: 50px;
+    height: 50px;
 
 }
-#arrow button:hover{
+
+#arrow button:hover {
     background-color: var(--color--secondary);
     color: var(--color--background);
     transition: var(--transition);
 }
+
 /* Inicio dos cards */
-.pratos #bloco1{
+.pratos #bloco1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -473,58 +483,68 @@ z-index: -1;
     background-color: var(--color--background);
     box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.65);
     border-radius: 10px;
-    
+
 }
-#asside1_2{
+
+#asside1_2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
 
 }
-#asside1_2 img{
+
+#asside1_2 img {
     width: 120px;
     height: 18px;
-   
+
 }
-#asside1_1 img{
+
+#asside1_1 img {
     width: 200px;
     height: 125px;
     border-radius: 50%;
 
 }
-#asside1_2 h2{
-    font-size: 22px ;
+
+#asside1_2 h2 {
+    font-size: 22px;
     font-weight: 600;
 }
-.complemento{
+
+.complemento {
     display: flex;
 }
-#veja_mais1 button{
+
+#veja_mais1 button {
     background-color: var(--color--primary);
     border: none;
     color: #fff;
     border-radius: 5px;
     padding: 5px 15px;
-    font-weight:500;
+    font-weight: 500;
     font-size: 1rem;
-    
+
 }
-#veja_mais1 button:hover{
+
+#veja_mais1 button:hover {
     background-color: rgba(226, 100, 121, 0.438);
     color: var(--color--background);
     transition: var(--transition);
 }
-.preco{
+
+.preco {
     color: var(--color--secondary);
     font-weight: 500;
 }
-.complemento{
+
+.complemento {
     display: flex;
     gap: 2rem;
 }
+
 /* card 2 */
-.pratos #bloco2{
+.pratos #bloco2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -534,34 +554,40 @@ z-index: -1;
     background-color: var(--color--background);
     box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.65);
     border-radius: 10px;
-    
+
 }
-#asside2_2{
+
+#asside2_2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
 
 }
-#asside2_2 h2{
-    font-size: 22px ;
+
+#asside2_2 h2 {
+    font-size: 22px;
     font-weight: 600;
 }
-#asside2_1 img{
+
+#asside2_1 img {
     width: 180px;
     height: 155px;
     border-radius: 50%;
 }
-#asside2_2 img{
+
+#asside2_2 img {
     width: 120px;
     height: 18px;
-   
+
 }
-.complemento{
+
+.complemento {
     display: flex;
 }
+
 /* cards 3*/
-.pratos #bloco3{
+.pratos #bloco3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -571,31 +597,36 @@ z-index: -1;
     background-color: var(--color--background);
     box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.65);
     border-radius: 10px;
-    
+
 }
-#asside3_2{
+
+#asside3_2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
 
 }
-#asside3_2 h2{
-    font-size: 22px ;
+
+#asside3_2 h2 {
+    font-size: 22px;
     font-weight: 600;
 }
-#asside3_1 img{
+
+#asside3_1 img {
     width: 200px;
     height: 125px;
     border-radius: 50%;
-    
+
 }
-#asside3_2 img{
+
+#asside3_2 img {
     width: 120px;
     height: 18px;
-   
+
 }
-.complemento{
+
+.complemento {
     display: flex;
 }
 
@@ -716,6 +747,7 @@ z-index: -1;
     background-color: #fff;
     border-radius: 20px;
 }
+
 .pratoInfo {
     padding: 20px;
     gap: 5px;

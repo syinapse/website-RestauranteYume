@@ -129,3 +129,16 @@ body{
             </div>
         </div>
     </section>-->
+
+
+
+
+    .yume {
+    color: var(--color--primary);
+    font-family: "Libre Baskerville";
+
+}
+
+.p{
+    color: var(--color--background);
+}

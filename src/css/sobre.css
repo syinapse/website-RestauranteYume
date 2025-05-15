@@ -287,24 +287,16 @@ a:hover {
    margin-bottom: 5%;
 }
 
+/*sakuras*/
 
-
-
-/* Icone */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*sakuras
+.sakuraD {
+  position: absolute;
+  top: 250px; /* Aumente esse valor para descer mais */
+  left: 82.2%;
+  z-index: 1;
+  max-width: 350px;
+  
+}
 
 
 

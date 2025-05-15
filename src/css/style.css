@@ -787,6 +787,9 @@ section {
 .btn-direcione .arrow {
   margin-left: 8px;
 }
+.arrow{
+    color: white
+}
 
 /* Unidades */
 .unidades {
@@ -821,9 +824,6 @@ section {
   width: 160px;
   pointer-events: none;
 }
-
-
-
 
 
 .sakura {

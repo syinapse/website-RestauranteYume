@@ -1,0 +1,149 @@
+/* Começo Cardápio */
+
+#heroCard::before {
+    background-image: var(--gradient), url(../assets/img/Banners/banner_cardapio.jpg);
+}
+
+
+.destaque {
+    font-family: "Libre Baskerville";
+    color: var(--color--background);
+    margin: auto;
+    text-align: center;
+}
+
+.outroHr h1 {
+    font-size: clamp(3rem, 3.2vmax, 6rem)
+}
+
+.outroHr p {
+    margin-top: 10px;
+    font-size: clamp(1.3rem, 1.5vmax, 4rem)
+}
+
+.conteudoPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sakura {
+    position: absolute;
+    height: 25vw;
+    width: 100%;
+    z-index: -1;
+    background-image: url(../assets/img/Sakuras/sakura3.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: clamp(19rem, 22dvw, 25rem);
+}
+
+.header-cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    width: 100%;
+    height: clamp(4.6rem);
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 0;
+    background-color: var(--color--background);
+    box-shadow: 0px 6px 12px #00000066;
+    border-radius: 50px;
+}
+
+
+.btnCardapio {
+    width: 15rem;
+    height: 4.6rem;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 0;
+    font-family: "Lexend";
+    font-size: 15pt;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btnCardapio:hover {
+    background-color: var(--color--primary);
+    font-size: 17pt;
+}
+
+/* Card Pratos Cardápio */
+
+.ilustraComida {
+    width: 25rem;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.pratosMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pratoMenu {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.pratoInfo {
+    padding: 20px;
+    gap: 5px;
+}
+
+.pratoInfo p {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.cardTitulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.btnPedir {
+    width: 6rem;
+    height: 1.8rem;
+    border: 0;
+    background: var(--color--primary);
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: "Lexend";
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.btnPedir:hover {
+    background-color: #eb96c18c;
+    font-size: 10.5pt;
+}
+
+.cardPreco {
+    display: flex;
+    align-items: center;
+    color: var(--color--secondary);
+    gap: .5rem;
+    margin-bottom: 10px;
+}
+
+.cardPreco h4 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-decoration: line-through;
+    opacity: .7;
+}
+
+.marked {
+    color: var(--color--secondary);
+    font-weight: 500;
+    background-color: #ff788a62;
+    padding: 2px;
+    border-radius: 3px;
+}

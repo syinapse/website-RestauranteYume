@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/icons.css">
     <title>Cardápio</title>
 </head>
 <body>
-    <section class="hero outroHr" id="heroCard">
-        <header class="header">
+    <header class="header outroHead" id="heroCard">
+        <section class="hero">
             <!-- Trocar para a logo -->
             <img id="logo" src="../assets/img/LogoYume.png">
             <nav>
@@ -26,11 +27,51 @@
                 <span class="barra"></span>
                 <span class="barra"></span>
             </div>
-        </header>
+        </section>
         <div class="destaque">
             <h1>Cardápio do <span>Yume</span></h1>
             <p>Conheça nosso menu</p>
         </div>
-    </section>
+    </header>
+
+    <main>
+        <section class="conteudoPrincipal">
+            <header class="pageTitulo">
+                <div class="iconeGuia">
+                    <span class="food-menu"></span>
+                </div>
+                <h1>Tradição Reinventada!</h1>
+            </header>
+
+            <span class="sakura"></span>
+
+            <nav>
+                <ul class="header-cardapio">
+                    <li><button class="btnCardapio" id="btnPromo">Promoções</button></li>
+                    <li><button class="btnCardapio" id="btnEntrada">Entradas</button></li>
+                    <li><button class="btnCardapio" id="btnPrincipal">Principais</button></li>
+                    <li><button class="btnCardapio" id="btnBebida">Bebidas</button></li>
+                    <li><button class="btnCardapio" id="btnSobremesa">Sobremesas</button></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="pratosMenu">
+            <article class="pratoMenu">
+                <img src="../assets/img/Card_Principal/p_gunkan.jpg" alt="gunkan" class="ilustraComida">
+                <div class="pratoInfo">
+                    <div class="cardTitulo">
+                        <h2>Uramaki</h2>
+                        <button class="btnPedir">Peça Agora</button>
+                    </div>
+                    <div class="cardPreco">
+                        <h3><span class="marked">R$32,50</span></h3>
+                        <h4>R$59,90</h4>
+                    </div>
+                    <p class="ingredientes">Arroz de sushi, alga nori, salmão picado, maionese, cebolinha, molho tare, brotos roxos para decorar.</p>
+                </div>
+            </article>
+        </section>
+    </main>
 </body>
 </html>

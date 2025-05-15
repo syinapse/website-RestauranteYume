@@ -1,63 +1,223 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/icons.css">
     <title>Restaurante Yume</title>
 </head>
-<body>
-    <section class="hero">
-        <header class="header">
-            <!-- Trocar para a logo -->
-            <img id="logo" src="./src/assets/img/LogoYume.png">
-            <nav>
-                <ul class="header-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="./src/pages/cardapio.html">Cardápio</a></li>
-                    <li><a href="./src/pages/contato.html">Contato</a></li>
-                    <li><a href="./src/pages/sobre.html">Sobre nós</a></li>
-                </ul>
-            </nav>
 
-            <!-- Menu Hamburguinho pro celular -->
-            <div class="sanduiche">
-                <span class="barra"></span>
-                <span class="barra"></span>
-                <span class="barra"></span>
+<body>
+    <!-- Inicio Loading page -->
+    <div id="inicio">
+        <div class="loading">
+            <div class="bem_vindo">
+                <img src="./src/assets/img/Some Stuffs/logo_preta.png" alt="">
+                <p>Bem vindo ao <span>Yume</span></p>
+            </div>
+            <div class="container loader">
+                <span>L</span>
+                <span>O</span>
+                <span>A</span>
+                <span>D</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+            </div>
+        </div>
+    </div>
+    <!-- Final Loading page -->
+    <div id="conteudo2" class="hidden">
+        <header class="header">
+            <section class="hero">
+                <!-- Trocar para a logo -->
+                <img id="logo" src="./src/assets/img/LogoYume.png">
+                <nav>
+                    <ul class="header-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./src/pages/cardapio.html">Cardápio</a></li>
+                        <li><a href="./src/pages/contato.html">Contato</a></li>
+                        <li><a href="./src/pages/sobre.html">Sobre nós</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Menu Hamburguinho pro celular -->
+                <div class="sanduiche">
+                    <span class="barra"></span>
+                    <span class="barra"></span>
+                    <span class="barra"></span>
+                </div>
+            </section>
+            <div id="destaqueHome">
+                <h1><span>Tradição</span> em cada detalhe, sabor em cada momento</h1>
+                <button class="btnReserva">faça sua reserva</button>
             </div>
         </header>
-        <div id="destaqueHome">
-            <h1><span>Tradição</span> em cada detalhe, sabor em cada momento</h1>
-            <button class="btnReserva">faça sua reserva</button>
+
+
+        <section class="boas-vindas">
+            <div class="conteudo">
+                <div class="imagens">
+                    <img src="./src/assets/img/Showcases/showcase_1.jpg" class="img1">
+                    <img src="./src/assets/img/Showcases/showcase_2.jpg" class="img2">
+                </div>
+
+               
+                <div class="iconeGuia">
+                    <span class="door-open"></span>
+                </div>
+
+                <div class="galho-decorativo">
+                    <img src="/src/assets/img/Sakuras/sakura.png" alt="Galho com flores de cerejeira">
+                </div>
+
+                <div class="texto">
+                    <h1 class="bem-vindo">Bem vindo(a) ao <span>Yume!</span></h1>
+                    <p class="text-inicial">No centro da cidade, nosso restaurante japonês é um espaço onde <span>
+                            tradição e autenticidade </span> se encontram.
+                        Inspirados pela imponência das cerejeiras e pelo espírito do hanami, criamos um ambiente que
+                        valoriza a <span>simplicidade, o
+                            equilíbrio e o respeito </span> à cultura japonesa. Cada prato é cuidadosamente elaborado
+                        com ingredientes frescos e técnicas
+                        clássicas, proporcionando uma <span>experiência gastronômica </span> genuína. Aqui, convidamos
+                        você a apreciar o melhor da culinária
+                        japonesa em um cenário que une <span>tranquilidade e sofisticação.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--Area mais vendidos-->
+        <div id="sakura2">
+            <img src="src/assets/img/Sakuras/sakura2.png" alt="sakura_icone">
         </div>
-    </section>
+        <section class="mais-vendidos">
+            <div class="icone_cetas">
+                <img src="./src/assets/img/Icons/iconYakisoba.png" alt="yakisoba_icone">
+                <div id="arrow">
+                    <button class="btnArrow"><span class="arrow-filled " id="leftArrow"></span></button>
+                    <button class="btnArrow"><span class="arrow-filled "></span></button>
+                </div>
+            </div>
+            <section id="mais_vendidos">
+                <div class="text_mais_vendidos">
+                    <h1>Mais vendidos</h1>
+                    <p>Pratos Principais</p>
+                </div>
 
-    <section class="boas-vindas">
-        <div class="conteudo">
-            <div class="imagens">
-                <img src="./src/assets/img/Showcases/showcase_1.jpg" class="img1">
-                <img src="./src/assets/img/Showcases/showcase_2.jpg" class="img2">
+                <div class="pratos">
+                    <div id="bloco1">
+                        <div id="asside1_1">
+                            <img src="./src/assets/img/curry.png" alt="produto1">
+                        </div>
+                        <div id="asside1_2">
+                            <div>
+                                <h2>Chicken Katsu</h2>
+                                <img src="./src/assets/img/Some Stuffs/stars.png" alt="stars">
+                            </div>
+                            <div class="complemento">
+                                <div class="preco">
+                                    <p>R$44,90</p>
+                                </div>
+                                <div id="veja_mais1">
+                                    <button>Veja Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bloco2">
+                        <div id="asside2_1">
+                            <img src="./src/assets/img/sushi.png" alt="produto2">
+                        </div>
+                        <div id="asside2_2">
+                            <div>
+                                <h2>Sushi Fresco</h2>
+                                <img src="./src/assets/img/Some Stuffs/stars.png" alt="stars">
+                            </div>
+                            <div class="complemento">
+                                <div class="preco">
+                                    <p>R$39,90</p>
+                                </div>
+                                <div id="veja_mais1">
+                                    <button>Veja Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bloco3">
+                        <div id="asside3_1">
+                            <img src="./src/assets/img/yakissoba.png" alt="produto3">
+                        </div>
+                        <div id="asside3_2">
+                            <div>
+                                <h2>Yakisoba</h2>
+                                <img src="./src/assets/img/Some Stuffs/stars.png" alt="stars">
+                            </div>
+                            <div class="complemento">
+                                <div class="preco">
+                                    <p>R$67,90</p>
+                                </div>
+                                <div id="veja_mais1">
+                                    <button>Veja Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- ENCONTRE O YUME PERTO DE VOCÊ -->
+
+        <section class="yume-localizacao">
+            <div class="icon-location">
+                <svg width="48" height="48" fill="none" stroke="#b77eb9" stroke-width="2" viewBox="0 0 24 24">
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M12 21s-6-5.686-6-10a6 6 0 1 1 12 0c0 4.314-6 10-6 10z" />
+                </svg>
             </div>
 
-            <div class="icon-door">
-                <img src="./src/assets/img/Icons/iconDoor.png" alt="Ícone de porta">
+            <div class="yume-localizacao-wrapper">
+                <div class="img-card">
+                    <img src="./src/assets/img/ilustra_local.png" alt="Restaurante Yume ao pôr do sol">
+                </div>
+
+                <div class="info-section">
+                    <h2>
+                        Encontre o <span>Yume</span> Perto de Você!
+                    </h2>
+                    <p class="desc">
+                        Estamos localizados em uma das regiões mais acessíveis e vibrantes da cidade.
+                    </p>
+                </div>
+
+                <div href="#" class="btn-direcione">
+                    Se direcione
+                    <span class="arrow">→</span>
+                </div>
+
+                <div class="unidades">
+                    <div class="unidade">
+                        <span class="unidade-title">Unidade <span>Europa</span></span><br>
+                        <span class="unidade-end">Avenida Europa, 595 – São Paulo</span>
+                    </div>
+
+                    <div class="unidade">
+                        <span class="unidade-title">Unidade <span>Moema</span> <span class="em-construcao">(em construção)</span></span><br>
+                        <span class="unidade-end">Bairro Campo Belo, 272 – São Paulo</span>
+                    </div>
+                </div>
+
+                <div>
+                    <img class="cherry-blossom" src="./src/assets/img/Sakuras/" alt="Flor de cerejeira">
+                </div>
             </div>
+        </section>
 
 
-            <div class="texto">
-                <h1 class="bem-vindo">Bem vindo(a) ao <span>Yume!</span></h1>
-                <p class="text-inicial">No centro da cidade, nosso restaurante japonês é um espaço onde <span> tradição e autenticidade </span> se encontram.
-                     Inspirados pela imponência das cerejeiras e pelo espírito do hanami, criamos um ambiente que valoriza a <span>simplicidade, o 
-                     equilíbrio e o respeito </span> à cultura japonesa. Cada prato é cuidadosamente elaborado com ingredientes frescos e técnicas 
-                     clássicas, proporcionando uma <span>experiência gastronômica </span> genuína. Aqui, convidamos você a apreciar o melhor da culinária 
-                     japonesa em um cenário que une <span>tranquilidade e sofisticação.</span> 
-                </p>  
-            </div>
-        </div>
-    </section>
-
-
-    <script src="./src/js/script.js"></script>
+        <script src="./src/js/script.js"></script>
 </body>
+
 </html>

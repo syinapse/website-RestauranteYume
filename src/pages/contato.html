@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- Linkando estilos da própria página -->
     <link rel="stylesheet" href="../css/contato.css">
+    <!-- Linkando icones -->
+    <link rel="stylesheet" href="../css/icons.css">
     <title>Contato</title>
 </head>
+
 <body>
     <header class="header outroHead" id="heroCard">
         <section class="hero">
@@ -30,10 +34,57 @@
                 <span class="barra"></span>
             </div>
         </section>
-      <div id="destaqueContato">
+        <div class="destaque">
             <h1>Entre em <span>contato!</span></h1>
-            <p>Alguma dúvida? Envie para nós!</p>
+            <p>Alguma duvida? Envie para nós</p>
         </div>
     </header>
+
+    <section id="icon-phone">
+        <div class="iconGuia">
+            <span class="ic--round-phone"></span>
+        </div>
+        <p>Envie a sua mensagem!</p>
+    </section>
+    <div class="galho-decorativo">
+        <img src="/src/assets/img/Sakuras/sakura.png" alt="Galho com flores de cerejeira">
+    </div>
+
+    <main>
+
+        <section class="box">
+            <form>
+                <h2>Nome completo</h2>
+                <div class="box-nomes">
+                    <div class="cont-inptnames">
+                        <input type="text" name="name" id="nome" required>
+                        <label for="name">Primeiro nome</label>
+                    </div>
+                    <div class="cont-inptnames">
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                        <label for="sobrenome">Sobrenome</label>
+                    </div>
+                </div>
+
+                <h2>Email</h2>
+                <div class="email">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">exemplo@exemplo.com</label>
+                </div>
+
+                <h2>Descrição</h2>
+                <div class="descricao">
+                    <textarea name="descricao" id="mensagem"></textarea>
+                </div>
+
+                <div class="enviar-container">
+                    <button type="submit" id="send">Enviar mensagem</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+
 </body>
+
 </html>

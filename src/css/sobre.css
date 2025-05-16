@@ -44,14 +44,18 @@
 
 
 /*parte das 2 imagens*/
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    gap: 300px;
 
+}
 .imagens{
-    position: relative;
+    
     width: 400px; /* ajuste conforme necessário */
     height: 0px; /* ajuste conforme necessário */
-    left: 65%;
-    right: auto;
-    top: 250px;
     margin-bottom: auto;
    
 }
@@ -59,7 +63,8 @@
 .img1{
     position: absolute;
   top: 0;
-  margin-left: -200px;
+ 
+  margin-right: 500px;
   width: 500px; /* ajuste conforme necessário */
   border: 3px solid var(--color--primary);
   z-index: 2;
@@ -79,24 +84,23 @@
 /*parte dos textos*/
 
 .titulo2 {
-    position: absolute;
-   padding: 1px 180px;
-    position: relative;
+    
+   /* padding: 1px 180px; */
     font-size: 1.3rem;
 }
 
 .sub{
-    position: absolute;
+    
     margin-top: 12%;
     margin-bottom: 3%;
-    color: var(--color--accent);
+    /* color: var(--color--accent); */
     font-size: 2rem;
 }
 
 
 
 .p2{
-    position:absolute;
+    /*position:absolute;*/
     font-weight: normal;
   font-size: 1.3rem;
   line-height: 1.7;
@@ -104,7 +108,7 @@
   margin: 1px;
   text-align: justify;
    max-width: 700px;
-   margin-top: 16%;
+   margin-top: 5%;
    margin-bottom: 5%;
 }
 

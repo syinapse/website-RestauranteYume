@@ -477,6 +477,7 @@ a:hover {
     text-align: center;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 
 }
 
@@ -487,6 +488,9 @@ a:hover {
 }
 
 /* Inicio dos cards */
+.pratos button{
+    cursor: pointer;
+}
 .pratos #bloco1 {
     display: flex;
     justify-content: center;
@@ -558,6 +562,7 @@ a:hover {
 }
 
 /* card 2 */
+
 .pratos #bloco2 {
     display: flex;
     justify-content: center;
@@ -601,6 +606,7 @@ a:hover {
 }
 
 /* cards 3*/
+
 .pratos #bloco3 {
     display: flex;
     justify-content: center;
@@ -611,6 +617,7 @@ a:hover {
     background-color: var(--color--background);
     box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.65);
     border-radius: 10px;
+    
 
 }
 
@@ -729,7 +736,7 @@ section {
 
 .btn-direcione:hover {
   background-color: #f73b99;
-  
+  transition: background-color 0.6s ease;
   color: white;
 }
 

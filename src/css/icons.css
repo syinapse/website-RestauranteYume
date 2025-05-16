@@ -37,15 +37,10 @@
   display: inline-block;
   width: 52px;
   height: 52px;
-  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23562135' d='M4 6H2v14c0 1.1.9 2 2 2h14v-2H4z'/%3E%3Cpath fill='%23562135' d='M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m0 10l-2.5-1.5L15 12V4h5z'/%3E%3C/svg%3E");
-  background-color: currentColor;
-  -webkit-mask-image: var(--svg);
-  mask-image: var(--svg);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;}
-
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23562135' d='M18 3H7a1 1 0 0 0-.707.293l-3 3l-.057.062a1 1 0 0 0-.235.6L3 7.008V18c0 1.654 1.346 3 3 3h9a3.01 3.01 0 0 0 2.829-2h.671c1.402 0 2.5-1.317 2.5-3V6c0-1.654-1.346-3-3-3M6 19c-.551 0-1-.448-1-1V8h2v11zm10-1c0 .552-.449 1-1 1H8V8h7c.551 0 1 .448 1 1zm3-2c0 .62-.324 1-.5 1H18V9c0-1.654-1.346-3-3-3H6.414l1-1H18c.551 0 1 .448 1 1z'/%3E%3C/svg%3E");
+}
 .hugeicons--location-05 {
   display: inline-block;
   width: 62px;

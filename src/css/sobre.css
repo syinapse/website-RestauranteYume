@@ -87,6 +87,7 @@
     
    /* padding: 1px 180px; */
     font-size: 1.3rem;
+    color: var(--color--secondary);
 }
 
 .sub{

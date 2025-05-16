@@ -293,6 +293,22 @@ a:hover {
     z-index: 2;
 }
 
+.destaque {
+    font-family: "Libre Baskerville";
+    color: var(--color--background);
+    margin: auto;
+    text-align: center;
+}
+
+.outroHr h1 {
+    font-size: clamp(3rem, 3.2vmax, 6rem)
+}
+
+.outroHr p {
+    margin-top: 10px;
+    font-size: clamp(1.3rem, 1.5vmax, 4rem)
+}
+
 /* Final da Hero */
 
 /* Boas Vindas */

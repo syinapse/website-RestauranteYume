@@ -1,168 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
-
-
-/* Utilizando Iconify em css: https://iconify.design/docs/usage/css/ */
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --color--primary: #EB96C1;
-    --color--secondary: #562135;
-    --color--accent: #ff788a;
-    --color--background: #FFEFFE;
-    --color--text: #000000;
-    --gradient: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .45));
-    --transition: .5s;
-}
-
-body {
-    font-size: 1.2rem;
-    font-family: "Lexend";
-    background-color: var(--color--background);
-}
-
-h1 {
-    font-family: "Libre Baskerville";
-}
-
-ul li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: var(--color--background);
-    font-weight: 600;
-    transition: color var(--transition);
-}
-
-span {
-    color: var(--color--primary);
-}
-
-/* Personaliza a cor e o fundo quando o texto é selecionado */
-::selection {
-    color: white;
-    background: var(--color--accent);
-}
-
-/* Começo da Hero */
-
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    min-height: 100dvh;
-    background-image: var(--gradient), url(../assets/img/Banners/banner_sobre.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-}
-
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 3rem;
-    padding-left: 3rem;
-    width: 100%;
-    background-color: #5621351f;
-    backdrop-filter: blur(1rem);
-}
-
-#logo {
-    width: 100px;
-}
-
-.header h1 {
-    font-size: clamp(3rem, 4vmax, 8rem);
-    color: var(--color--background);
-    font-weight: 500;
-}
-
-#destaqueHome {
-    position: relative;
-    padding-left: 4rem;
-    bottom: 23rem;
-    z-index: 2;
-    width: 65%;
-}
-
-
-a:hover {
-    color: var(--color--accent);
-}
-
-.header-menu {
-    display: flex;
-    gap: 3.5rem;
-    justify-content: space-between;
-}
-
-.btnReserva {
-    font-family: "Lexend";
-    width: 320px;
-    height: 60px;
-    margin-top: 1rem;
-    border-radius: 20px;
-    background-color: transparent;
-    border: solid 3px var(--color--primary);
-    color: var(--color--primary);
-    font-size: 1.7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    transition: var(--transition);
-    cursor: pointer;
-}
-
-.btnReserva:hover {
-    background-color: var(--color--primary);
-    color: var(--color--text);
-}
-
-
-.sanduiche {
-    display: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-}
-
-.barra {
-    display: block;
-    width: 3rem;
-    height: .3rem;
-    background-color: var(--color-light);
-    margin: .5rem auto;
-    border-radius: var(--radius);
-    transition: var(--transition);
-}
-
-/* ::before é necessário para dar o efeito de blur no componente */
-.outroHead::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    filter: blur(8px);
-    z-index: -1;
-}
-
-.outroHead{
-    position: relative;
-    min-height: 50dvh;
-    z-index: 2;
-}
  .yume {
     color: var(--color--primary);
     font-family: "Libre Baskerville";
@@ -186,28 +22,7 @@ a:hover {
 /* Final da Hero */
 
 
-.icon-door{
-    position:absolute;
-    left: 48%;
-    
-}
 
-.icon-door img {
-    width: 400px;
-    height: 90px;
-    object-fit: contain;
-    margin-top: 50px;
-    margin-bottom: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 6rem;
-    height: 6rem;
-    background-color: var(--color--background);
-    border-radius: 50%;
-    box-shadow: 0px 4px 8px #00000040;
-    
-}
 
 .iconeGuia {
     display: flex;
@@ -220,6 +35,11 @@ a:hover {
     box-shadow: 0px 4px 8px #00000040;
     
 
+}
+
+#heroCard::before{
+    background-image: 
+        var(--gradient), url(../assets/img/Banners/banner_sobre.jpg);
 }
 
 

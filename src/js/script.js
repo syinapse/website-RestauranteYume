@@ -1,3 +1,8 @@
+const btnDireciona = document.getElementById('btnDireciona');
+btnDireciona.addEventListener('click', () => {
+  location.href = "https://www.google.com/maps?q=Avenida+Europa,+595,+São+Paulo";
+})
+
 //funcao para fazer o efeito de transicao entre a tela de carregamento e o conteudo
 window.onload = function () {
   const intro = document.getElementById("inicio");

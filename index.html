@@ -89,7 +89,7 @@
             <img src="src/assets/img/Sakuras/sakura2.png" alt="sakura_icone">
         </div>
         <section class="mais-vendidos">
-            <div class="icone_cetas">
+            <div class="icone_setas">
                 <img src="./src/assets/img/Icons/iconYakisoba.png" alt="yakisoba_icone">
                 <div id="arrow">
                     <button class="btnArrow"><span class="arrow-filled" id="leftArrow"></span></button>
@@ -167,47 +167,34 @@
         <!-- ENCONTRE O YUME PERTO DE VOCÊ -->
 
         <section class="yume-localizacao">
-            <div class="icon-location">
-                <span class="hugeicons--location-05"></span>
+            <div class="iconeGuia">
+                <span class="location"></span>
             </div>
 
-            <div class="yume-localizacao-wrapper">
-                <div class="img-card">
-                    <img src="./src/assets/img/ilustra_local.png" alt="Restaurante Yume ao pôr do sol">
-                </div>
+            <article class="containerLoc">
+                <img src="./src/assets/img/ilustra_local.png" alt="Imagem local restaurante Yume">
 
-                <div class="info-section">
-                    <h2>
-                        Encontre o <span>Yume</span> Perto de Você!
-                    </h2>
-                    <p class="desc">
-                        Estamos localizados em uma das regiões mais acessíveis e vibrantes da cidade.
-                    </p>
-                </div>
+                <span class="sakura3"></span>
 
-                <a href="https://www.google.com/maps?q=Avenida+Europa,+595,+São+Paulo" target="_blank"
-                    class="btn-direcione">
-                    Se direcione
-                    <span class="arrow">→</span>
-                </a>
-
-                <div class="unidades">
-                    <div class="unidade">
-                        <span class="unidade-title">Unidade <span>Europa</span></span><br>
-                        <span class="unidade-end">Avenida Europa, 595 – São Paulo</span>
+                <div class="loc-infos">
+                    <div class="loc-main">
+                        <h1 id="loc-titulo">Encontre o <span>Yume</span> Perto de Você!</h1>
+                        <p id="loc-intro">Estamos localizados em uma das regiões mais acessíveis e vibrantes da cidade.</p>
+                        <button href="https://www.google.com/maps?q=Avenida+Europa,+595,+São+Paulo" id="btnDireciona">Se direcione</button>
                     </div>
 
-                    <div class="unidade">
-                        <span class="unidade-title">Unidade <span>Moema</span> <span class="em-construcao">(em
-                                construção)</span></span><br>
-                        <span class="unidade-end">Bairro Campo Belo, 272 – São Paulo</span>
+                    <div class="locais">
+                        <div class="local" id="loc-atual">
+                            <h2>Unidade <span>Europa</span></h2>
+                            <p>Avenida Europa, 595 – São Paulo</p>
+                        </div>
+                        <div class="local">
+                            <h2>Unidade <span>Moema</span> <span class="constuindo">(em construção)</span></h2>
+                            <p>Bairro Campo Belo, 272 – São Paulo</p>
+                        </div>
                     </div>
                 </div>
-
-                <div>
-                    <img class="cherry-blossom" src="./src/assets/img/Sakuras/sakura3.png" alt="Flor de cerejeira">
-                </div>
-            </div>
+            </article>
         </section>
 
         <!--inicio do footer-->

@@ -57,21 +57,39 @@
 
 .ilustraComida {
     width: 25rem;
+    height: 16.8rem;
     border-radius: 20px 20px 0px 0px;
 }
 
 .pratosMenu {
     display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 70px;
     align-items: center;
     justify-content: center;
+    margin: auto;
+    
 }
 
 .pratoMenu {
     display: flex;
     flex-direction: column;
     width: 25rem;
+    height: 30rem;
     background-color: #fff;
     border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.26);
+    animation: cardAnimation .2s ease-in;
+}
+
+@keyframes cardAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .pratoInfo {
@@ -89,6 +107,10 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
+}
+
+.cardTitulo h2 {
+    font-size: 1.5rem;
 }
 
 .btnPedir {

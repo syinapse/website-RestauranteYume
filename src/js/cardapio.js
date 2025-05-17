@@ -1,3 +1,5 @@
+import { toggleHambuguer } from "./hamburguer.js";
+
 let pratos = []
 const endpointAPI = "https://syinapse.github.io/YumeMenuAPI/yumeMenu.json";
 
@@ -7,6 +9,7 @@ const btnPrincipal = document.getElementById("btnPrincipal");
 const btnBebida = document.getElementById("btnBebida");
 const btnSobremesa = document.getElementById("btnSobremesa");
 
+toggleHambuguer();
 buscarPratos();
 async function buscarPratos() {
     const res = await fetch(endpointAPI); // Realiza a requisição para o link da API. O método fetch() só retorna erro caso ocorra problemas na rede. Precisa do await junto com o seu retorno.

@@ -10,7 +10,7 @@ window.onload = function () {
       content.classList.remove("hiden");
       content.classList.add("efeito-in");
     }, 1000);
-  }, 3000);
+  }, 100); // 3000
 };
 
 
@@ -38,5 +38,5 @@ function trocar(cor) {
     document.body.classList.remove('no-scroll');
     document.getElementById('conteudo2').classList.remove('hidden');
     document.getElementById('inicio').classList.add('hidden');
-  }, 5000);
+  }, 100); // 5000
 });

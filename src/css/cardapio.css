@@ -144,11 +144,3 @@
     text-decoration: line-through;
     opacity: .7;
 }
-
-.marked {
-    color: var(--color--secondary);
-    font-weight: 500;
-    background-color: #ff788a62;
-    padding: 2px;
-    border-radius: 3px;
-}

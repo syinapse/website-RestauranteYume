@@ -83,8 +83,7 @@ textarea {
     font-size: 1rem;
 }
 
-.box form input,
-textarea,
+.box form,
 button {
     cursor: pointer;
 }
@@ -131,6 +130,7 @@ button {
     width: fit-content;
     /* Centraliza horizontalmente e adiciona margem superior */
     margin-bottom: 20px;
+    transition: var(--transition);
 }
 
 #send:active {
@@ -140,6 +140,10 @@ button {
 
 #send:active {
   transform: scale(0.95); /* Diminui o botão para 95% do seu tamanho original */
+}
+
+#send:hover {
+    background-color: #5621359c;
 }
 
 /*Ajeitando sakura*/

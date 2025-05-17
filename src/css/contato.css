@@ -3,6 +3,8 @@
     background-image: url(../assets/img/Banners/banner_contato.jpg);
 }
 
+/*Fim cabeçalho*/
+/* Estilizando icone e mensagem */
 .iconGuia {
     margin-bottom: 20px;
     background-color: var(--color--background);
@@ -29,7 +31,8 @@
     font-size: 3rem;
     margin-bottom: 20px;
 }
-/*Fim cabeçalho*/
+
+/* fim icone e mensagem */
 /* Estilizando main */
 
 /*Formulário*/
@@ -39,7 +42,7 @@
     width: 43%;
     margin: 20px auto;
     background: var(--color--background);
-    padding: 5%;
+    padding: 4%;
 }
 
 .box form {
@@ -79,8 +82,10 @@ textarea {
     outline-color: var(--color--accent);
     font-size: 1rem;
 }
+
 .box form input,
-textarea, button{
+textarea,
+button {
     cursor: pointer;
 }
 
@@ -118,18 +123,98 @@ textarea, button{
     font-size: 20px;
     border-radius: 8px;
     background-color: var(--color--secondary);
+    border: none;
     color: var(--color--background);
     display: block;
-    margin: 70px auto 0 auto; /* Faz o botão ocupar a largura total do pai */
-    width: fit-content;  /* Centraliza horizontalmente e adiciona margem superior */
+    margin: 70px auto 0 auto;
+    /* Faz o botão ocupar a largura total do pai */
+    width: fit-content;
+    /* Centraliza horizontalmente e adiciona margem superior */
     margin-bottom: 20px;
 }
 
+#send:active {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra menor e mais interna */
+  transform: translateY(2px); /* Move o botão um pouco para baixo */
+}
+
+#send:active {
+  transform: scale(0.95); /* Diminui o botão para 95% do seu tamanho original */
+}
+
 /*Ajeitando sakura*/
-.galho-cerejeira{
+.galho-cerejeira {
     display: flex;
     position: absolute;
     z-index: -1;
 }
 
 /* fim main */
+
+@media (max-width: 1350px){
+    #email{
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+  .box {
+    width: 75%;
+  }
+
+  #nome,
+  #sobrenome,
+  #mensagem,
+  #email {
+    width: 100%;
+  }
+
+  .box .box-nomes {
+    flex-direction: column; /* Isso fará com que os campos fiquem um abaixo do outro */
+  }
+
+  .box .box-nomes > .cont-inptnames {
+    width: 100%; /* Garante que cada div ocupe a largura total */
+  }
+
+    .iconGuia {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .ic--round-phone {
+        width: 52px;
+        height: 52px;
+    }
+
+    #icon-phone>p {
+        font-size: 2rem;
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+
+    .box{
+        padding: 10%;
+    }
+    #icon-phone>p {
+        display: none;
+    }
+
+    .iconGuia {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .ic--round-phone {
+        width: 42px;
+        height: 42px;
+    }
+
+    .galho-cerejeira {
+        display: none;
+    }
+}

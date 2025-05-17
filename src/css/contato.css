@@ -43,6 +43,7 @@
     margin: 20px auto;
     background: var(--color--background);
     padding: 4%;
+    margin-bottom: 50px;
 }
 
 .box form {

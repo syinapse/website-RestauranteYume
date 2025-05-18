@@ -943,7 +943,7 @@ footer .separacao1 {
 
 /*responsividade*/
 
-@media(width <= 1024px) {
+@media(width <= 1080px) {
     body {
         overflow-x: hidden;
     }

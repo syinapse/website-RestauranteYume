@@ -11,7 +11,7 @@ O projeto busca **traduzir** essa essência acolhedora para o digital, com um **
 
 ## 🔗 Acesse o site
 <!-- Adicionar Link do github pages -->
-👉 [https:/www.yumerestaurant.com.br]()
+👉 [https:/www.yumerestaurant.com.br](https://syinapse.github.io/website-RestauranteYume/)
 
 ## 💻 Funcionalidades
 

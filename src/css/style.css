@@ -842,6 +842,12 @@ footer .separacao1 {
     font-weight: 300;
 }
 
+#copyMobile {
+    font-size: 17px;
+    font-weight: 300;
+    display: none;
+}
+
 /* Social media Footer */
 #restaurante h2 {
     font-weight: 300;
@@ -1167,6 +1173,66 @@ footer .separacao1 {
     #loc-sakura {
         display: none;
     }
+
+    /* Começo Footer */
+    footer {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    footer .separacao1 {
+        gap: 1rem;
+    }
+
+    .social_midia {
+        position: relative;
+        gap: 1rem;
+        justify-content: left;
+        align-items: start;
+        padding: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    #restaurante h2 {
+        font-size: 1.8rem;
+    }
+
+    .social_midia img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social {
+        padding: 5px;
+    }
+
+    /* eventsFooter */
+    .events {
+        justify-content: left;
+        align-items: start;
+    }
+
+    .events_pv {
+        margin-left: 0px;
+    }
+
+    /* Novidades */
+    .novidades {
+        gap: 1rem;
+        direction: ltr;
+        text-align: left;
+    }
+
+
+    #copy {
+        display: none;
+    }
+
+    #copyMobile {
+        display: flex;
+    }
+
 }
 
 @media (max-width: 500px) {

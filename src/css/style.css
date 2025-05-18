@@ -158,7 +158,8 @@ body {
     background: #fbefff;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: "Libre Baskerville";
 }
 
@@ -214,7 +215,7 @@ span {
 }
 
 .header h1 {
-    font-size: clamp(3rem, 4vmax, 8rem);
+    font-size: clamp(2.8rem, 4vmax, 8rem);
     color: var(--color--background);
     font-weight: 500;
 }
@@ -265,7 +266,8 @@ span {
     position: relative;
     z-index: 2;
 }
-.hamburguer button{
+
+.hamburguer button {
     background: none;
     border: none;
 }
@@ -334,6 +336,10 @@ span {
     gap: 12rem;
 }
 
+.imagens img {
+    width: clamp(23.5rem, 35vw, 50rem);
+}
+
 /* Icone */
 
 .sakura {
@@ -361,6 +367,7 @@ span {
     align-content: center;
     align-items: center;
     font-size: 1.3rem;
+    text-align: justify;
     line-height: 1.7;
     width: 100%;
 }
@@ -676,7 +683,7 @@ span {
     flex-direction: column;
     margin-top: 20px;
     gap: 8rem;
-    width: 550px;    
+    width: 550px;
 }
 
 .loc-main {
@@ -689,7 +696,7 @@ span {
     height: 25vw;
     background-image: url(../assets/img/Sakuras/sakura3.png);
     background-position: 100%;
-    
+
 }
 
 #loc-titulo {
@@ -743,7 +750,7 @@ span {
 }
 
 #loc-atual {
-    border-left: 4px solid var(--color--secondary);   
+    border-left: 4px solid var(--color--secondary);
 }
 
 .constuindo {
@@ -754,6 +761,7 @@ span {
     font-weight: 500;
 
 }
+
 /* Iniciando Estilo do Icone e título  */
 .pageTitulo {
     display: flex;
@@ -943,9 +951,28 @@ footer .separacao1 {
 
 /*responsividade*/
 
-@media(width <= 1080px) {
+@media(width <=1080px) {
     body {
         overflow-x: hidden;
+    }
+
+    #logo {
+        width: 80px;
+        margin: 10px 0;
+    }
+
+
+    #destaqueHome {
+        position: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        padding-left: 0;
+        text-align: center;
+        width: 90%;
     }
 
     .hamburguer {
@@ -969,11 +996,11 @@ footer .separacao1 {
         align-content: start;
         transition: var(--transition);
     }
-    
+
     .active {
         right: 0;
     }
-    
+
     .hamburguer.active .barra:first-child {
         transform: translateY(15px) rotate(360deg) rotate(45deg);
     }
@@ -981,7 +1008,7 @@ footer .separacao1 {
     .hamburguer.active .barra:nth-child(2) {
         opacity: 0;
     }
-    
+
     .hamburguer.active .barra:last-child {
         transform: translateY(-10px) rotate(-360deg) rotate(-45deg);
     }
@@ -989,5 +1016,162 @@ footer .separacao1 {
     .header-menu {
         gap: 6rem;
         font-size: 2.3rem;
+    }
+
+    /* Boas Vindas */
+    .boas-vindas {
+        padding: 6rem 0;
+    }
+
+    .bem-vindo {
+        font-size: 1.8rem;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        width: 80%;
+        margin: 1rem auto;
+        gap: 10px;
+    }
+
+    .sakura {
+        height: 100vw;
+        background-size: clamp(19rem, 22dvw, 25rem);
+    }
+
+    /* Mais Vendidos */
+    #sakura2 img {
+        top: 160px;
+        left: 130px;
+
+    }
+
+    .text_mais_vendidos {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .text_mais_vendidos h1 {
+        font-size: 2.3rem;
+    }
+
+    .text_mais_vendidos p {
+        font-size: 1.4rem;
+    }
+
+    #bloco2,
+    #bloco3 {
+        display: none;
+    }
+
+    .pratos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pratos #bloco1 {
+        width: 20rem;
+        height: 20rem;
+        flex-direction: column;
+    }
+
+    #asside1_1 img {
+        width: 250px;
+        height: 145px;
+        border-radius: 50%;
+    }
+
+    #asside1_2 {
+        gap: 5px;
+    }
+
+    #asside1_2 h2 {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    #asside1_2 img {
+        width: 150px;
+        height: 25px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .preco {
+        font-size: 1.35rem;
+        color: var(--color--secondary);
+        font-weight: 500;
+    }
+
+
+    .pratos #bloco2 {
+        display: none;
+    }
+
+    .pratos #bloco3 {
+        display: none;
+    }
+
+    /* Localização */
+
+    .yume-localizacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .containerLoc {
+        flex-direction: column;
+    }
+
+    .containerLoc img {
+        content: url(../assets/img/ilustracao_local_horiz.png);
+        margin: auto;
+        width: 70%;
+        box-shadow: 16px 13px 13px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+
+    .loc-infos {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .loc-main {
+        /* align-items: center; */
+        justify-content: center;
+        width: 75%;
+        margin-left: 3rem;
+    }
+
+    #loc-titulo {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    #loc-intro {
+        font-weight: 200;
+        font-size: 1.2rem;
+    }
+
+    .locais {
+        gap: 50px;
+    }
+
+    #loc-sakura {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .sakura {
+        height: 260vw;
+        background-size: clamp(19rem, 22dvw, 25rem);
     }
 }
